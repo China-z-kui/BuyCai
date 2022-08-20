@@ -5,8 +5,40 @@ import HomeView from '../views/HomeView.vue'
 Vue.use(VueRouter)
 
 const routes = [
+  // {
+  //   path: '/login',
+  //   name: 'routeName',
+  //   component: () => import('../views/Login.vue'),
+  // },
+  
+  // {
+  //   path: '/register',
+  //   name: 'routeName',
+  //   component: () => import('../views/Register.vue'),
+  // },
+  {
+    path: '/detail',
+    name: 'routeName',
+    component: () => import('../views/Detail.vue'),
+  },
+  {
+    path: '/report',
+    name: 'routeName',
+    component: () => import('../views/Report.vue'),
+  },
+  {
+    path: '/ranking',
+    name: 'routeName',
+    component: () => import('../views/RanKing.vue'),
+  },
+  {
+    path: '/listcar',
+    name: 'routeName',
+    component: () => import('../views/ListCar.vue'),
+  },
   {
     path: '/',
+    // redirect:'/login',
     name: 'home',
     component: HomeView
   },
